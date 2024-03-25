@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 18:10:07 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/25 15:42:41 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/25 15:47:26 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@ static char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read);
 static char	*ft_get_line(char *save);
 static int	ft_reset_save(char *save);
 
+/**
+ * @brief	Reads the next line from a file descriptor.
+ * @param	fd		The file descriptor to read from.
+ * @return	The next line from the file descriptor as a malloced string.
+ * NULL if an error occurs.
+ */
 char	*get_next_line(int fd)
 {
 	static char	save[OPEN_MAX][BUFFER_SIZE + 1];
