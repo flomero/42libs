@@ -6,15 +6,15 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 18:10:07 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/25 15:14:14 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/25 15:42:41 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read);
-char	*ft_get_line(char *save);
-int		ft_reset_save(char *save);
+static char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read);
+static char	*ft_get_line(char *save);
+static int	ft_reset_save(char *save);
 
 char	*get_next_line(int fd)
 {
@@ -39,7 +39,7 @@ char	*get_next_line(int fd)
 	return (ft_reset_save(save[fd]), free(line), temp);
 }
 
-char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read)
+static char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read)
 {
 	char	*temp;
 
@@ -59,7 +59,7 @@ char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read)
 	return (line);
 }
 
-char	*ft_get_line(char *str)
+static char	*ft_get_line(char *str)
 {
 	char	*line;
 	size_t	i;
@@ -74,7 +74,7 @@ char	*ft_get_line(char *str)
 	return (line);
 }
 
-int	ft_reset_save(char *save)
+static int	ft_reset_save(char *save)
 {
 	int	i;
 
