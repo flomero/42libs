@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 22:55:06 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/07 15:39:24 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/25 15:55:20 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;
 
+	if (dst == NULL || src == NULL)
+		return (0);
 	src_len = ft_strlen(src);
 	if (src_len + 1 < dstsize)
 		ft_memcpy(dst, src, src_len + 1);
