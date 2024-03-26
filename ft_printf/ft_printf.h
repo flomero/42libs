@@ -6,14 +6,14 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 00:06:36 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/25 15:43:55 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 10:17:36 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft/libft.h"
+# include "../libft.h"
 # include <limits.h>
 # include <stdarg.h>
 # include <stdlib.h>
