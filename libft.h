@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/26 13:20:15 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 13:31:07 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,28 +37,36 @@ int					ft_isprint(int c);
 int					ft_isspace(int c);
 
 /* STRING FUNCTIONS */
+/* Basic*/
 size_t				ft_strlen(const char *s);
+char				*ft_strdup(const char *s1);
+/* strl */
 size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
-int					ft_toupper(int c);
-int					ft_tolower(int c);
+/* strn */
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
+/* strdel */
+size_t				ft_strdellen(const char *s, char del);
+char				*ft_strdelcpy(char *dest, const char *src, char del);
+char				*ft_strdeldup(const char *src, char del);
+/* search */
 char				*ft_strnstr(const char *haystack, const char *needle,
 						size_t len);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
-int					ft_strncmp(const char *s1, const char *s2, size_t n);
+/* Conversions*/
 int					ft_atoi(const char *str);
-char				*ft_strdup(const char *s1);
+char				*ft_itoa(int n);
+int					ft_toupper(int c);
+int					ft_tolower(int c);
+/* Operations */
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(char const *s, char c);
-char				*ft_itoa(int n);
+/* Iterate */
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
-char				*ft_strdelcpy(char *dest, const char *src, char del);
-char				*ft_strdeldup(const char *src, char del);
-size_t				ft_strdellen(const char *s, char del);
 
 /* MEMORY FUNCTIONS */
 void				*ft_memset(void *b, int c, size_t len);
