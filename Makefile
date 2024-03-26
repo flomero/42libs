@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/26 13:27:06 by flfische         ###   ########.fr        #
+#    Updated: 2024/03/26 13:33:14 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,8 @@ LIST_FILES := ft_lstadd_back.c \
 PUT_FILES := ft_putchar_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
-			ft_putstr_fd.c
+			ft_putstr_fd.c \
+			ft_putstrarr_fd.c
 
 GNL_FILES := get_next_line.c 
 
