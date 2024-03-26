@@ -6,11 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 21:51:30 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/07 15:36:25 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 10:36:53 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * @brief locates the first occurrence of c (converted to a char) in the string

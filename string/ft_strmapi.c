@@ -6,11 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 16:37:24 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/07 15:39:57 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 10:36:52 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * @brief applies the function f to each character of the string s

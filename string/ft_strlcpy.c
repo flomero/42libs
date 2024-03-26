@@ -6,11 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 22:55:06 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/25 15:55:20 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 10:36:52 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * @brief copies up to dstsize - 1 characters from the string src to dst,

@@ -6,11 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 11:42:56 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/07 15:38:02 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 10:36:52 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /**
  * @brief allocates and returns a new string, which is the result of the
