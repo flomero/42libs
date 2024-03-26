@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/26 11:51:01 by flfische         ###   ########.fr        #
+#    Updated: 2024/03/26 13:10:55 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -127,4 +127,9 @@ fclean: clean
 
 re:	fclean all
 
-.PHONY: all clean fclean re
+test: all
+	$(CC) $(CFLAGS) main.c $(NAME) -o test
+	./test
+	rm -f test
+
+.PHONY: all clean fclean re test
