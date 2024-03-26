@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/26 11:26:31 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 13:20:15 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,9 @@ char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+char				*ft_strdelcpy(char *dest, const char *src, char del);
+char				*ft_strdeldup(const char *src, char del);
+size_t				ft_strdellen(const char *s, char del);
 
 /* MEMORY FUNCTIONS */
 void				*ft_memset(void *b, int c, size_t len);

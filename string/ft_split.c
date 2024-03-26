@@ -6,21 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 12:09:27 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/26 10:36:52 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/26 13:18:17 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-
-static size_t	ft_strlen_del(const char *s, char del)
-{
-	int	size;
-
-	size = 0;
-	while (s[size] && s[size] != del)
-		size++;
-	return (size);
-}
 
 static int	ft_count_substr(char const *s, char del)
 {
@@ -46,31 +36,6 @@ static int	ft_count_substr(char const *s, char del)
 	return (count);
 }
 
-static char	*ft_strcpy_del(char *dest, const char *src, char del)
-{
-	int	i;
-
-	i = 0;
-	while (src[i] && src[i] != del)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-
-static char	*ft_strdup_del(const char *src, char del)
-{
-	char	*dest;
-
-	dest = (char *)malloc(ft_strlen_del(src, del) + 1);
-	if (dest == NULL)
-		return (NULL);
-	ft_strcpy_del(dest, src, del);
-	return (dest);
-}
-
 /**
  * @brief Allocates (with malloc(3)) and returns an array of strings obtained by
  * splitting ’s’ using the character ’c’ as a delimiter. The array must be
@@ -94,7 +59,7 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s == c)
 			s++;
-		arr[i] = ft_strdup_del(s, c);
+		arr[i] = ft_strdeldup(s, c);
 		if (arr[i] == NULL)
 		{
 			while (i > 0)

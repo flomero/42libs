@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/26 13:10:55 by flfische         ###   ########.fr        #
+#    Updated: 2024/03/26 13:27:06 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,10 @@ STRING_FILES := ft_atoi.c \
 				ft_substr.c \
 				ft_substr.c \
 				ft_tolower.c \
-				ft_toupper.c
+				ft_toupper.c \
+				ft_strdelcpy.c \
+				ft_strdeldup.c \
+				ft_strdellen.c \
 
 MEMORY_FILES := ft_bzero.c \
 				ft_calloc.c \
@@ -129,7 +132,10 @@ re:	fclean all
 
 test: all
 	$(CC) $(CFLAGS) main.c $(NAME) -o test
-	./test
-	rm -f test
+	@echo "\033[0;32m"
+	@echo "TESTING LIBFT"
+	@echo "\033[0m"
+	@./test
+	@rm -f test
 
 .PHONY: all clean fclean re test
