@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/26 11:21:06 by flfische         ###   ########.fr        #
+#    Updated: 2024/03/26 11:51:01 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -111,19 +111,19 @@ NAME := libft.a
 all: $(NAME)
 
 $(NAME): $(OBJDIR) $(OFILES)
-	@ar rcs $(NAME) $(OFILES)
+	ar rcs $(NAME) $(OFILES)
 
 $(OBJDIR)/%.o: %.c
-	@$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJDIR):
-	@mkdir -p $(OBJDIR)
+	mkdir -p $(OBJDIR)
 
 clean:
-	@rm -rf $(OBJDIR)
+	rm -rf $(OBJDIR)
 
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all
 
