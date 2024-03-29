@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/29 12:03:19 by flfische         ###   ########.fr        #
+#    Updated: 2024/03/29 17:00:56 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ STRING_FILES := ft_atoi.c \
 				ft_itoa.c \
 				ft_split.c \
 				ft_strchr.c \
+				ft_strcmp.c \
 				ft_strdup.c \
 				ft_striteri.c \
 				ft_strjoin.c \
