@@ -3,3 +3,4 @@ main.c
 *.out
 test*
 .vs-code
+*.a
