@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_putintarr_fd.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 18:10:22 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/29 12:09:19 by flfische         ###   ########.fr       */
+/*   Created: 2024/03/29 11:36:37 by flfische          #+#    #+#             */
+/*   Updated: 2024/03/29 12:14:32 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "../libft.h"
 
-# include "../libft.h"
-# include <limits.h>
+void ft_putintarr_fd(int *arr, int size, int fd)
+{
+	int i;
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
-# endif
-
-# ifndef OPEN_MAX
-#  define OPEN_MAX 32767
-# endif
-
-char	*get_next_line(int fd);
-
-#endif
+	i = 0;
+	while (i < size)
+	{
+		ft_putnbr_fd(arr[i], fd);
+		ft_putchar_fd('\n', fd);
+		i++;
+	}
+}

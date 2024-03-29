@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/26 13:32:45 by flfische         ###   ########.fr       */
+/*   Updated: 2024/03/29 11:42:50 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstrarr_fd(char **arr, int fd);
+void				ft_putintarr_fd(int *arr, int size, int fd);
 
 /* LIST FUNCTIONS */
 t_list				*ft_lstnew(void *content);
