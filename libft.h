@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/29 17:01:27 by flfische         ###   ########.fr       */
+/*   Updated: 2024/04/17 21:30:06 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ char				*ft_strrchr(const char *s, int c);
 /* Conversions*/
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
+double				ft_atod(char *str);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 /* Operations */
@@ -65,6 +66,7 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(char const *s, char c);
+void				ft_strskipif(char **str, int (*f)(int));
 /* Iterate */
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));

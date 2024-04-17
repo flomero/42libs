@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/04/17 21:13:20 by flfische         ###   ########.fr        #
+#    Updated: 2024/04/17 21:32:38 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ vpath %.h $(INCLUDE_DIRS)
 ###############                   C FILES                         ##############
 ################################################################################
 
-STRING_FILES := ft_atoi.c \
+STRING_FILES := ft_atod.c \
+				ft_atoi.c \
 				ft_itoa.c \
 				ft_split.c \
 				ft_strchr.c \
@@ -44,6 +45,7 @@ STRING_FILES := ft_atoi.c \
 				ft_strncmp.c \
 				ft_strnstr.c \
 				ft_strrchr.c \
+				ft_strskipif.c \
 				ft_strtrim.c \
 				ft_substr.c \
 				ft_substr.c \
