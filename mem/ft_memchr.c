@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 23:53:12 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/26 10:36:53 by flfische         ###   ########.fr       */
+/*   Updated: 2024/04/17 21:14:15 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (cs[i] == (unsigned char)c)
-			return ((void *)&s[i]);
+			return ((void *)&cs[i]);
 		i++;
 	}
 	return (NULL);

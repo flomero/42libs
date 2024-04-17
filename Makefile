@@ -6,12 +6,12 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/03/29 17:00:56 by flfische         ###   ########.fr        #
+#    Updated: 2024/04/17 21:13:20 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC := cc
-#CFLAGS := -Wall -Wextra -Werror
+CFLAGS := -Wall -Wextra -Werror
 
 
 ################################################################################
