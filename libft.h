@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/04/17 21:30:06 by flfische         ###   ########.fr       */
+/*   Updated: 2024/04/24 21:08:30 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t n);
 void				*ft_calloc(size_t count, size_t size);
+int					ft_realloc_str(char **str, size_t len, size_t new_len);
 
 /* PUT UTILS */
 int					ft_putchar_fd(char c, int fd);
