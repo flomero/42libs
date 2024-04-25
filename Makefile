@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/04/25 17:36:38 by flfische         ###   ########.fr        #
+#    Updated: 2024/04/26 01:02:41 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -127,7 +127,12 @@ all: ascii_art $(NAME)
 $(NAME): $(OFILES) 
 	@printf "\n$(YELLOW)Creating $(NAME)$(NC)\n"
 	@ar rcs $(NAME) $(OFILES)
-	@echo "$(GREEN)$(NAME) created$(NC)"
+# only print if the file was created
+	@if [ -f $(NAME) ]; then \
+		echo "$(GREEN)$(NAME) created$(NC)"; \
+	else \
+		echo "$(RED)$(NAME) not created$(NC)"; \
+	fi
 	@echo "------------------------------------------------"
 
 $(OBJDIR)/%.o: %.c | $(OBJDIR)
