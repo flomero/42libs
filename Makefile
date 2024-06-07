@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/06/07 11:18:42 by flfische         ###   ########.fr        #
+#    Updated: 2024/06/07 11:21:36 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,12 +122,18 @@ OFILES := $(addprefix $(OBJDIR)/, $(CFILES:.c=.o))
 ################################################################################
 ###############                   HEADERS                         ##############
 ################################################################################
+
+HEADERS := libft.h get_next_line.h ft_printf.h
+
+################################################################################
+###############                    RULES                          ##############
+################################################################################
 NAME := libft.a
 
 all: ascii_art $(NAME)
 
 
-$(NAME): $(OFILES) 
+$(NAME): $(OFILES)
 	@printf "\n$(YELLOW)Creating $(NAME)$(NC)\n"
 	@ar rcs $(NAME) $(OFILES)
 # only print if the file was created
@@ -138,7 +144,7 @@ $(NAME): $(OFILES)
 	fi
 	@echo "------------------------------------------------"
 
-$(OBJDIR)/%.o: %.c | $(OBJDIR)
+$(OBJDIR)/%.o: %.c $(HEADERS) | $(OBJDIR)
 	@$(eval CURRENT := $(shell echo $$(($(CURRENT) + 1))))
 	@$(eval PERCENT := $(shell echo $$(($(CURRENT) * 100 / $(TOTAL_SRCS)))))
 	@printf "$(CLEAR_LINE)$(YELLOW)Compiling $(PERCENT)%% [$(CURRENT)/$(TOTAL_SRCS)] $(ITALIC_LIGHT_YELLOW)$<$(NC)"
