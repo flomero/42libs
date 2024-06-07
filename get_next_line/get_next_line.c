@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 18:10:07 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/25 15:47:26 by flfische         ###   ########.fr       */
+/*   Updated: 2024/04/26 00:59:46 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,14 @@ static int	ft_reset_save(char *save);
  */
 char	*get_next_line(int fd)
 {
-	static char	save[OPEN_MAX][BUFFER_SIZE + 1];
+	static char	save[OPEN_MAX][GNL_BUFFER_SIZE + 1];
 	char		*line;
 	char		*temp;
 	int			bytes_read;
 
 	if (fd < 0)
 		return (NULL);
-	if (BUFFER_SIZE <= 0 || read(fd, save, 0) == -1)
+	if (GNL_BUFFER_SIZE <= 0 || read(fd, save, 0) == -1)
 		return (ft_memcpy(save[fd], "\0", 1), NULL);
 	line = ft_strdup(save[fd]);
 	if (line == NULL)
@@ -52,7 +52,7 @@ static char	*ft_read_loop(int fd, char *save, char *line, int *bytes_read)
 	*bytes_read = 1;
 	while (!ft_strchr(line, '\n') && *bytes_read != 0)
 	{
-		*bytes_read = read(fd, save, BUFFER_SIZE);
+		*bytes_read = read(fd, save, GNL_BUFFER_SIZE);
 		if (*bytes_read == -1)
 			return (free(line), NULL);
 		save[*bytes_read] = '\0';

@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 18:10:22 by flfische          #+#    #+#             */
-/*   Updated: 2024/03/29 12:09:19 by flfische         ###   ########.fr       */
+/*   Updated: 2024/04/26 00:59:10 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include "../libft.h"
 # include <limits.h>
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
+# ifndef GNL_BUFFER_SIZE
+#  define GNL_BUFFER_SIZE 100
 # endif
 
 # ifndef OPEN_MAX
