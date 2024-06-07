@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/06/07 11:12:52 by flfische         ###   ########.fr        #
+#    Updated: 2024/06/07 11:18:42 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,6 +68,7 @@ MEMORY_FILES := \
 				ft_realloc_str.c
 
 CHAR_FILES := \
+				ft_isonly.c \
 				ft_isalnum.c \
 				ft_isalpha.c \
 				ft_isascii.c \
