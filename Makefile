@@ -6,7 +6,7 @@
 #    By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/26 10:49:23 by flfische          #+#    #+#              #
-#    Updated: 2024/04/25 17:36:38 by flfische         ###   ########.fr        #
+#    Updated: 2024/06/07 11:11:09 by flfische         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ STRING_FILES := \
 				ft_strlen.c \
 				ft_strmapi.c \
 				ft_strncmp.c \
+				ft_strndup.c \
+				ft_strnlen.c \
 				ft_strnstr.c \
 				ft_strrchr.c \
 				ft_strskipif.c \

@@ -6,7 +6,7 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:47:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/04/24 21:08:30 by flfische         ###   ########.fr       */
+/*   Updated: 2024/06/07 11:11:39 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t				ft_strlcpy(char *dst, const char *src, size_t dstsize);
 /* strn */
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
+char				*ft_strndup(const char *s1, size_t n);
+size_t				ft_strnlen(const char *s, size_t n);
 /* strdel */
 size_t				ft_strdellen(const char *s, char del);
 char				*ft_strdelcpy(char *dest, const char *src, char del);
